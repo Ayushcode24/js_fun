@@ -25,3 +25,31 @@
   https://262.ecma-international.org/5.1/#sec-11.4.3
 
 */
+
+// *****************************************************************************
+
+// Two types of memory - Stack (For Primitive)  & Heap (Non-Primitive)
+//1. Stack = value donot change  
+  let myFirstName = "Ayush"
+  let anotherName = myFirstName
+  anotherName = "Ray"
+  console.log(myFirstName);
+  console.log(anotherName);
+
+
+// 2. heap= value changes
+
+   let userOne = {
+      email : "Ayush@gmail.com"
+     
+   }
+   let userTwo = userOne
+
+   userTwo.email = "Ayushray@gmail.com"
+   
+   console.log(userOne);
+   console.log(userTwo);
+   
+   
+  
+  
