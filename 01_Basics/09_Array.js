@@ -16,3 +16,13 @@ let teaFlavors = ["green tea","black tea","oolong tea"]
    //citiesVisited[2]="Berlin"
    citiesVisited.push("Berlin");
    console.log(citiesVisited);
+
+   // 4. You have an array named `teaorders` wit "chai","iced tea","matcha" and "earl grey".Remove the last element of array using `pop` method and store it in a variable named `LastOrder`.
+
+   let teaorders = ["chai","iced tea","matcha","earl grey"]
+    const LastOrder = teaorders.pop();// This remove last elemt of array and by again apply remove 2nd last element.
+    console.log(LastOrder);
+
+    // 6. You have an array namede `popularTeas` containing "green tea","oolong tea" and "chai".Create a soft copy of this array named `softCopyTeas`.
+
+    
