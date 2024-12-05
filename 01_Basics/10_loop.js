@@ -89,5 +89,5 @@ for (const num of number) {
     }
     smallNumber.push(num);
 }
-console.log(smallNumber);
+//console.log(smallNumber);
 
