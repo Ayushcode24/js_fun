@@ -54,3 +54,40 @@ for(int c = 0; c < cityList; c++ ){
     cityList.push(myCity);
 }
 console.log( cityList);
+// Some most conceptual problems of Loop
+/* 1. write a  `for` loop that loops through th array ["green tea", "black tea","chai","cold"] and stops loops when it finds "chai", store all teas before "chai" in a new array named `selectedTeas` */
+
+let teas = ["green tea", "black tea","chai","cold"];
+let selectedTeas =[];
+for(let i = 0; i < teas.length; i++){
+    if(teas[i] === "chai"){
+        break;
+    }
+    selectedTeas.push(teas[i]);
+}
+console.log(selectedTeas)
+
+/* 2. write a `for` loop that loops through the array ["London","NY", "Paris","Berlin"] and skips "Paris", store the other cities in a new array named `visitedCities`. */
+
+let place = ["London","NY", "Paris","Berlin"];
+let visitedCities = [];
+for (let t = 0 ; t < place.length ; t++) {
+    if(place[t] === "Paris"){
+        continue;
+    }
+    visitedCities.push(place[t]);
+}
+console.log(visitedCities);
+
+/* 3. use a `for-of` loop to iterate through the array  [1,2,3,4,5] and stop when number `4` is found. Store the numbers before `4` in an array named `smallNumber`. */
+
+let number = [1,2,3,4,5];
+let smallNumber = [];
+for (const num of number) {
+    if(num === 4){
+        break;
+    }
+    smallNumber.push(num);
+}
+console.log(smallNumber);
+
